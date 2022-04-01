@@ -1,0 +1,157 @@
+/*
+Autor: @maravoly
+Correo:yilliam.maraboli@yahoo.es
+*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color:#707070;
+}
+
+h1 {
+	font-size: 2em; /*2x15=30px*/
+}
+
+h2{
+	font-size: 1.5em; /*1.5x15=22.5px*/
+}
+
+h3{
+	font-size: 1.5em; /*1x15=15px*/
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: #de820f 2px solid;
+}
+
+p{  line-height: 2em;  }
+
+#logotipo{
+    float: left;
+}
+
+.navbar{
+    float: right;
+}
+
+.navbar li{
+    display: inline-block;
+    list-style: none;
+}
+
+.navbar a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    background-color: #3b2211;
+    color:#fff;
+}
+
+a:link{
+    color:#3b2211;
+}
+
+a:hover{
+    color:#de820f;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.contenedor{
+    margin: auto;
+    max-width: 576px;
+}
+
+.banner{
+    background-image: url(images/banner.jpg);
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.titulo {
+    text-align: center;
+    border-bottom: 2px #cccccc dotted;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.carta{
+    background-color: #ffffff;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.restaurant{
+    text-align: center;
+    background-color: #f6f6f6;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+p{
+    font-style: italic;
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+.pie { 
+    background-color: #3b2211; 
+    color: #fff; 
+    text-align: center ; 
+    padding: 3%
+}
+
+.contenedor {
+	margin: auto;
+	max-width: 576px
+}
+
+/*  CONSULTA PARA TABLET
+min-width:577px   max-width:768px   */
+@media screen and (min-width: 577px) and (max-width: 768px){
+    .contenedor{ 
+       max-width: 768px;
+       margin: auto;
+    }
+    
+    /*crea una clase para diagramar en  2 columnas*/
+    .col-50 {
+        width: 50%; /*100/5=50*/
+        padding:1%;
+        float: left;
+    }
+    
+    } /*fin consulta tablet*/
+    
+    
+    /*consulta para desktop, ancho mÃ­nimo 960px
+    en este caso no se especifica ancho mÃ¡ximo */
+    @media screen and (min-width:769px){ 
+    /*definir un nuevo  ancho mÃ¡ximo para los contenedores*/
+    .contenedor{ 
+       max-width: 1360px;
+       margin: auto;
+    }
+    
+    /*crea una clase para diagramar en  3 columnas*/
+    .col-33 {
+        width: 33.33%; /*100/3=33.33*/
+        padding:1%;
+        float: left;
+    }
+    
+    }/*cierre de la consulta*/
